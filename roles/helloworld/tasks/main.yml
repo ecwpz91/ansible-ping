@@ -10,5 +10,8 @@
     var: hostvars[inventory_hostname]
     verbosity: 4
 
+- name: Test a command on the target host
+  command: ls -lFa
+
 - name: Example from an Ansible Playbook
   ansible.builtin.ping:
